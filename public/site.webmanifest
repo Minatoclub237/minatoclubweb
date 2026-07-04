@@ -1,0 +1,18 @@
+{
+  "name": "Minato Club Web",
+  "short_name": "Minato Club Web",
+  "description": "Sites vitrines premium sur mesure pour TPE & PME en France, Belgique et Suisse.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

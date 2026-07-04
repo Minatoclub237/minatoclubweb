@@ -1,0 +1,17 @@
+# Minato Club Web — robots.txt
+User-agent: *
+Allow: /
+
+# Crawlers IA (autorisés — visibilité sur ChatGPT, Perplexity, Google AI Overviews)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://minatoclub.org/sitemap.xml

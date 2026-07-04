@@ -1,0 +1,8 @@
+{
+  "name": "MINATO CLUB WEB",
+  "description": "Un site vitrine premium pour les petites entreprises, TPE et PME en France, Belgique et Suisse. Propulsé par le design intelligent et l'expertise humaine de Minato Club Web.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
