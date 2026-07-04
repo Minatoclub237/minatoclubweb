@@ -50,7 +50,7 @@ export default function App() {
       monthlyPrice: "+ 21 € / mois (maintenance & hébergement)",
       tagline: "La solution parfaite pour les TPE & PME souhaitant une présence locale remarquable et professionnelle.",
       features: [
-        "Design d'interface entièrement sur mesure en 2 jours ouvrés",
+        "Design 3D cinématique entièrement sur mesure en 2 jours ouvrés",
         "Rédaction optimisée pour votre activité locale",
         "Adaptabilité mobile (Responsive) & Accessibilité optimale",
         "Hébergement ultra-rapide sécurisé avec SSL inclus",

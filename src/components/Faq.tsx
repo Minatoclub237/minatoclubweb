@@ -29,6 +29,10 @@ export const FAQ_ITEMS = [
     q: "Puis-je demander des modifications ?",
     a: "Bien sûr. Des révisions sont incluses jusqu'à la validation de votre maquette, et des ajustements restent possibles ensuite selon votre formule d'accompagnement.",
   },
+  {
+    q: "Puis-je payer en plusieurs fois ?",
+    a: "Oui. Le paiement en 2 fois sans frais est disponible : un acompte à la commande, le solde à la livraison de votre site vitrine 3D cinématique. Sans aucun coût supplémentaire.",
+  },
 ];
 
 export function Faq() {

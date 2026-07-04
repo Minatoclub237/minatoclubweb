@@ -14,7 +14,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
     "Hébergement & SSL inclus",
     "SEO local optimisé",
     "Conforme RGPD",
-    "Sans engagement",
+    "Paiement 2× sans frais",
   ];
 
   return (
@@ -64,14 +64,14 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
             <span className="bg-white text-black rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider">
               TPE & PME
             </span>
-            <span>La solution web idéale pour les entreprises de France, Belgique et Suisse.</span>
+            <span>Sites vitrines 3D cinématiques pour les entreprises de France, Belgique et Suisse.</span>
           </motion.div>
 
           {/* Heading using BlurText */}
           <div className="mt-2" id="hero-heading-container">
             <BlurText
               as="h1"
-              text="Le Site Vitrine Que Votre Marque Mérite"
+              text="Le Site Vitrine 3D Cinématique Que Votre Marque Mérite"
               delay={150}
               stagger={100}
               splitBy="words"
@@ -87,7 +87,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
             className="text-sm md:text-base lg:text-lg text-white/80 font-body font-light max-w-xl leading-relaxed"
             id="hero-subtext"
           >
-            Un design de classe mondiale pour votre entreprise locale. Conçu intelligemment, optimisé par des experts pour attirer vos clients et stimuler votre croissance.
+            Des sites vitrines 3D cinématiques sur mesure pour votre entreprise locale. Une expérience immersive qui capte l'attention, inspire confiance et transforme vos visiteurs en clients.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -130,7 +130,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
             </span>
             <span className="text-white/25">·</span>
             <span className="flex items-center gap-1.5">
-              <Check className="h-3.5 w-3.5 text-emerald-400 shrink-0" /> Sans engagement
+              <Check className="h-3.5 w-3.5 text-emerald-400 shrink-0" /> Paiement 2× sans frais
             </span>
             <span className="text-white/25">·</span>
             <span className="flex items-center gap-1.5">

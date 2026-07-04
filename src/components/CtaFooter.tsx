@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import type HlsType from "hls.js"; // type uniquement (effacé à la compilation, 0 Ko runtime)
 import { motion, AnimatePresence } from "motion/react";
-import { ArrowUpRight, Check, X, MessageCircle, ShieldCheck, Clock, Award } from "lucide-react";
+import { ArrowUpRight, Check, X, MessageCircle, ShieldCheck, Clock, Award, CreditCard } from "lucide-react";
 import { track } from "../lib/analytics";
 import { CountryFlag } from "./CountryFlag";
 import { isMobileViewport } from "../lib/device";
@@ -181,7 +181,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
           className="text-white/70 font-body font-light text-sm md:text-base max-w-xl leading-relaxed"
           id="cta-subtext"
         >
-          Réservez un échange stratégique offert. Découvrez l'impact d'un site vitrine d'exception conçu sur mesure pour propulser votre entreprise locale en France, Belgique et Suisse. Sans engagement, sans pression.
+          Réservez un échange stratégique offert. Découvrez l'impact d'un site vitrine 3D cinématique conçu sur mesure pour propulser votre entreprise locale en France, Belgique et Suisse. Paiement 2× sans frais.
         </motion.p>
 
         {/* Interactive CTA buttons */}
@@ -232,6 +232,10 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
           <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
             <Award className="h-4 w-4 text-emerald-400/80 shrink-0" />
             Site vitrine 100&nbsp;% votre propriété
+          </span>
+          <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
+            <CreditCard className="h-4 w-4 text-emerald-400/80 shrink-0" />
+            Paiement 2× sans frais
           </span>
         </motion.div>
 

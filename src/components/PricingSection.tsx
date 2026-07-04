@@ -16,7 +16,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
       monthlyPrice: "+ 21 € / mois (maintenance & hébergement)",
       tagline: "La solution parfaite pour les TPE & PME souhaitant une présence locale remarquable et professionnelle.",
       features: [
-        "Design d'interface entièrement sur mesure en 2 jours ouvrés",
+        "Design 3D cinématique entièrement sur mesure en 2 jours ouvrés",
         "Rédaction optimisée pour votre activité locale",
         "Adaptabilité mobile (Responsive) & Accessibilité optimale",
         "Hébergement ultra-rapide sécurisé avec SSL inclus",
@@ -94,7 +94,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-white/60 font-body font-light text-sm md:text-base max-w-xl mt-2"
           >
-            Choisissez la formule qui correspond au stade de développement de votre entreprise. Tous nos prix sont transparents.
+            Choisissez la formule de site vitrine 3D cinématique adaptée à votre entreprise. Prix transparents, paiement 2× sans frais.
           </motion.p>
 
           {/* Ancrage de valeur : repère de marché honnête */}
@@ -220,7 +220,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
           className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 mt-14"
         >
           {[
-            "Sans engagement",
+            "Paiement 2× sans frais",
             "Acompte à la commande, solde après validation",
             "Maquette validée avant paiement",
           ].map((t) => (

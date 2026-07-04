@@ -1,13 +1,13 @@
 # Minato Club Web
 
-> Studio de création de sites vitrines premium, sur mesure, pour les TPE et PME de France, Belgique et Suisse. Design d'exception, référencement local (SEO), livraison en 2 jours ouvrés. Échange stratégique offert et sans engagement.
+> Studio de création de sites vitrines 3D cinématiques, sur mesure, pour les TPE et PME de France, Belgique et Suisse. Design immersif, référencement local (SEO), livraison en 2 jours ouvrés. Paiement 2× sans frais.
 
-Minato Club Web conçoit des sites vitrines haut de gamme pour les petites et moyennes entreprises francophones. L'approche combine un design entièrement personnalisé, une rédaction optimisée pour l'activité locale du client, et une optimisation pour le référencement local sur Google et Google Maps. La maquette est validée par le client avant tout paiement, et le site livré lui appartient à 100 %.
+Minato Club Web conçoit des sites vitrines 3D cinématiques haut de gamme pour les petites et moyennes entreprises francophones : des expériences web immersives et animées qui captent l'attention. L'approche combine un design entièrement personnalisé, une rédaction optimisée pour l'activité locale du client, et une optimisation pour le référencement local sur Google et Google Maps. La maquette est validée par le client avant tout paiement, le paiement est possible en 2 fois sans frais, et le site livré lui appartient à 100 %.
 
 ## Offres
 
-- [Édition Essentielle — à partir de 1 290 €](https://minatoclubweb.vercel.app/#pricing) : site vitrine sur mesure en 2 jours, rédaction locale, responsive, hébergement SSL, SEO local. + 21 €/mois (maintenance & hébergement).
-- [Pack Croissance — à partir de 3 990 €](https://minatoclubweb.vercel.app/#pricing) : prise de rendez-vous, SEO régional approfondi, rapports mensuels, support prioritaire. + 57 €/mois.
+- [Édition Essentielle — à partir de 1 290 €](https://minatoclubweb.vercel.app/#pricing) : site vitrine 3D cinématique sur mesure en 2 jours, rédaction locale, responsive, hébergement SSL, SEO local. Paiement 2× sans frais. + 21 €/mois (maintenance & hébergement).
+- [Pack Croissance — à partir de 3 990 €](https://minatoclubweb.vercel.app/#pricing) : site vitrine 3D cinématique, prise de rendez-vous, SEO régional approfondi, rapports mensuels, support prioritaire. Paiement 2× sans frais. + 57 €/mois.
 - [Solutions Sur Mesure — sur devis](https://minatoclubweb.vercel.app/#pricing) : e-commerce ou portail client, intégrations métiers (CRM, ERP, paiement), design exclusif.
 
 ## Garanties
@@ -15,11 +15,11 @@ Minato Club Web conçoit des sites vitrines haut de gamme pour les petites et mo
 - Maquette validée avant tout paiement.
 - Site livré en 2 jours ouvrés.
 - Site et contenu 100 % propriété du client.
-- Sans engagement.
+- Paiement en 2 fois sans frais.
 
 ## Questions fréquentes
 
-- [FAQ](https://minatoclubweb.vercel.app/#faq) : propriété du site, délais de livraison, paiement, référencement Google, modifications incluses.
+- [FAQ](https://minatoclubweb.vercel.app/#faq) : propriété du site, délais de livraison, paiement 2× sans frais, référencement Google, modifications incluses.
 
 ## Zones desservies
 

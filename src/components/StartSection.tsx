@@ -129,7 +129,7 @@ export function StartSection({ onCtaClick }: StartSectionProps) {
           className="text-white/70 font-body font-light text-sm md:text-base max-w-xl leading-relaxed"
           id="start-subtext"
         >
-          Partagez votre vision. Notre technologie intelligente s'occupe du reste : maquettes, design, code et déploiement. Le tout en seulement 2 jours pour booster la visibilité locale de votre entreprise en France, Belgique et Suisse.
+          Partagez votre vision. Notre technologie intelligente s'occupe du reste : maquettes, design 3D cinématique, développement et déploiement. Le tout en seulement 2 jours pour booster la visibilité locale de votre entreprise en France, Belgique et Suisse.
         </motion.p>
 
         {/* CTA Button */}
