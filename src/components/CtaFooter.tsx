@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, Check, X, MessageCircle, ShieldCheck, Clock, Award } from "lucide-react";
 import { track } from "../lib/analytics";
 import { CountryFlag } from "./CountryFlag";
+import { isMobileViewport } from "../lib/device";
 
 interface CtaFooterProps {
   onViewPricingClick: () => void;
@@ -33,6 +34,8 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+    // Pas de vidéo de fond sur mobile (fluidité) : la section garde son fond sombre.
+    if (isMobileViewport()) return;
 
     let hls: HlsType | null = null;
     let cancelled = false;

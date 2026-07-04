@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import type HlsType from "hls.js"; // type uniquement (0 Ko runtime)
 import { motion } from "motion/react";
+import { isMobileViewport } from "../lib/device";
 
 export function Stats() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -10,6 +11,8 @@ export function Stats() {
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+    // Pas de vidéo de fond sur mobile (fluidité).
+    if (isMobileViewport()) return;
 
     let hls: HlsType | null = null;
     let cancelled = false;

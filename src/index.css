@@ -104,6 +104,19 @@ body {
   overflow: hidden;
 }
 
+/* Mobile : on allège les flous très coûteux (backdrop-filter) pour la fluidité au scroll.
+   Desktop totalement inchangé. */
+@media (max-width: 768px) {
+  .liquid-glass {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+  .liquid-glass-strong {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
 .liquid-glass-strong::before {
   content: '';
   position: absolute;
