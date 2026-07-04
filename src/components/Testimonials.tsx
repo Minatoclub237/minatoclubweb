@@ -108,7 +108,7 @@ export function Testimonials() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-white/45 font-body font-light text-xs max-w-md"
           >
-            Exemples illustratifs par secteur — France, Belgique et Suisse.
+            Artisans, commerçants et professionnels — France · Belgique · Suisse.
           </motion.p>
         </div>
 
@@ -134,6 +134,9 @@ export function Testimonials() {
                     <div className="text-white/[0.06] absolute top-6 right-7">
                       <Quote className="h-9 w-9 rotate-180" />
                     </div>
+                    <span className="absolute bottom-6 right-7 text-[9px] uppercase tracking-widest text-white/20 font-body select-none pointer-events-none">
+                      Scénario
+                    </span>
 
                     <div className="flex flex-col gap-4 relative z-10">
                       <Stars rating={item.rating} />
