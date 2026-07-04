@@ -30,14 +30,13 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
           loop
           muted
           playsInline
+          poster="/hero-poster.jpg"
           className="absolute left-0 w-full h-auto object-cover opacity-80 z-0"
           style={{ top: "20%", minHeight: "60%" }}
           id="hero-video-bg"
         >
-          <source
-            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4"
-            type="video/mp4"
-          />
+          {/* Vidéo locale compressée (616 Ko au lieu de 11 Mo) : ouverture rapide, sans dépendance externe */}
+          <source src="/hero.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for high luxury contrast */}
         <div className="absolute inset-0 bg-black/15 z-0" />

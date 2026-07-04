@@ -38,19 +38,9 @@ export function Navbar({ onNavigate }: NavbarProps) {
           id="logo-link"
         >
           <div className="relative h-11 w-11 rounded-full flex items-center justify-center overflow-hidden liquid-glass-strong border border-white/20">
-            {/* Elegant luxury visual badge in case image is loading or missing */}
             <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-white/40 opacity-50 group-hover:scale-110 transition-transform duration-500" />
-            <img
-              src="/src/assets/logo-icon.png"
-              alt="Studio Logo"
-              onError={(e) => {
-                // If local image is missing, replace with a sleek minimalist visual indicator
-                (e.currentTarget as HTMLImageElement).style.display = "none";
-              }}
-              className="h-9 w-9 object-contain z-10 relative"
-            />
-            {/* Fallback geometric luxury symbol inside logo */}
-            <span className="font-heading italic text-sm tracking-tight text-white select-none z-0">MCW</span>
+            {/* Monogramme MCW (plus d'image externe cassée) */}
+            <span className="font-heading italic text-sm tracking-tight text-white select-none relative z-10">MCW</span>
           </div>
           <span className="font-heading italic text-xl tracking-wide text-white group-hover:opacity-80 transition-opacity">
             MINATO CLUB WEB

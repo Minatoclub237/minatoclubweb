@@ -6,9 +6,9 @@ Minato Club Web conçoit des sites vitrines haut de gamme pour les petites et mo
 
 ## Offres
 
-- [Édition Essentielle — à partir de 1 290 €](https://minatoclub.org/#pricing) : site vitrine sur mesure en 2 jours, rédaction locale, responsive, hébergement SSL, SEO local. + 21 €/mois (maintenance & hébergement).
-- [Pack Croissance — à partir de 3 990 €](https://minatoclub.org/#pricing) : prise de rendez-vous, SEO régional approfondi, rapports mensuels, support prioritaire. + 57 €/mois.
-- [Solutions Sur Mesure — sur devis](https://minatoclub.org/#pricing) : e-commerce ou portail client, intégrations métiers (CRM, ERP, paiement), design exclusif.
+- [Édition Essentielle — à partir de 1 290 €](https://minatoclubweb.vercel.app/#pricing) : site vitrine sur mesure en 2 jours, rédaction locale, responsive, hébergement SSL, SEO local. + 21 €/mois (maintenance & hébergement).
+- [Pack Croissance — à partir de 3 990 €](https://minatoclubweb.vercel.app/#pricing) : prise de rendez-vous, SEO régional approfondi, rapports mensuels, support prioritaire. + 57 €/mois.
+- [Solutions Sur Mesure — sur devis](https://minatoclubweb.vercel.app/#pricing) : e-commerce ou portail client, intégrations métiers (CRM, ERP, paiement), design exclusif.
 
 ## Garanties
 
@@ -19,7 +19,7 @@ Minato Club Web conçoit des sites vitrines haut de gamme pour les petites et mo
 
 ## Questions fréquentes
 
-- [FAQ](https://minatoclub.org/#faq) : propriété du site, délais de livraison, paiement, référencement Google, modifications incluses.
+- [FAQ](https://minatoclubweb.vercel.app/#faq) : propriété du site, délais de livraison, paiement, référencement Google, modifications incluses.
 
 ## Zones desservies
 
@@ -29,4 +29,4 @@ France, Belgique, Suisse (accompagnement à distance).
 
 - Email : web-design-assistance@minatoclub.org
 - WhatsApp : +33 6 44 66 21 63
-- [Demander un devis gratuit](https://minatoclub.org/#cta)
+- [Demander un devis gratuit](https://minatoclubweb.vercel.app/#cta)
