@@ -55,7 +55,7 @@ export function FeaturesChess({ onLearnMoreClick }: FeaturesChessProps) {
                 Conçu pour attirer vos clients locaux.
               </h3>
               <p className="text-white/70 font-body font-light text-sm md:text-base leading-relaxed">
-                Chaque élément de votre site est pensé pour inspirer confiance. Nous créons pour vous un design unique et ultra-rapide qui convertit vos visiteurs en clients fidèles, parfaitement adapté aux attentes de vos clients en France, Belgique et Suisse.
+                Chaque élément de votre site vitrine est pensé pour inspirer confiance. Nous créons pour vous un design unique et ultra-rapide qui convertit vos visiteurs en clients fidèles, parfaitement adapté aux attentes de vos clients en France, Belgique et Suisse.
               </p>
               <button
                 onClick={() => onLearnMoreClick("performance")}

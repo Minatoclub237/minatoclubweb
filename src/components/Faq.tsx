@@ -6,11 +6,11 @@ import { Plus } from "lucide-react";
 // Toute modification ici doit être répercutée là-bas (et inversement) pour rester conforme Google.
 export const FAQ_ITEMS = [
   {
-    q: "Le site m'appartient-il vraiment ?",
+    q: "Le site vitrine m'appartient-il vraiment ?",
     a: "Oui, à 100 %. Une fois le solde réglé, le site et l'ensemble de son contenu sont votre propriété pleine et entière — code, textes et visuels compris.",
   },
   {
-    q: "Combien de temps faut-il pour livrer mon site ?",
+    q: "Combien de temps faut-il pour livrer mon site vitrine ?",
     a: "Deux jours ouvrés en moyenne à partir de la validation de votre maquette. Vous êtes en ligne en quelques jours, pas en plusieurs mois.",
   },
   {
@@ -22,7 +22,7 @@ export const FAQ_ITEMS = [
     a: "Aucunement. Nous gérons tout de A à Z : conception, rédaction, mise en ligne et hébergement. Vous n'avez qu'à partager votre vision, nous nous occupons du reste.",
   },
   {
-    q: "Mon site sera-t-il visible sur Google ?",
+    q: "Mon site vitrine sera-t-il visible sur Google ?",
     a: "Oui. Chaque site est optimisé pour le référencement local (SEO) afin que vos clients de votre région vous trouvent facilement sur Google et Google Maps.",
   },
   {

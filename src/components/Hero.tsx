@@ -71,7 +71,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
           <div className="mt-2" id="hero-heading-container">
             <BlurText
               as="h1"
-              text="Le Site Web Que Votre Marque Mérite"
+              text="Le Site Vitrine Que Votre Marque Mérite"
               delay={150}
               stagger={100}
               splitBy="words"

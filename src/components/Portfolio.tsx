@@ -85,7 +85,7 @@ export function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-white/60 font-body font-light text-sm md:text-base max-w-xl mt-2"
           >
-            Découvrez des exemples concrets de sites internet créés pour des commerces de proximité et des professionnels locaux.
+            Découvrez des exemples concrets de sites vitrines créés pour des commerces de proximité et des professionnels locaux.
           </motion.p>
         </div>
 

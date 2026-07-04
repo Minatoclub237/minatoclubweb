@@ -169,7 +169,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
           className="text-5xl md:text-6xl lg:text-7xl font-heading italic text-white leading-[0.85] max-w-3xl tracking-tight"
           id="cta-heading"
         >
-          Votre prochain site commence ici.
+          Votre prochain site vitrine commence ici.
         </motion.h2>
 
         {/* High readability subtext */}
@@ -181,7 +181,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
           className="text-white/70 font-body font-light text-sm md:text-base max-w-xl leading-relaxed"
           id="cta-subtext"
         >
-          Réservez un échange stratégique offert. Découvrez l'impact d'un site web d'exception conçu sur mesure pour propulser votre entreprise locale en France, Belgique et Suisse. Sans engagement, sans pression.
+          Réservez un échange stratégique offert. Découvrez l'impact d'un site vitrine d'exception conçu sur mesure pour propulser votre entreprise locale en France, Belgique et Suisse. Sans engagement, sans pression.
         </motion.p>
 
         {/* Interactive CTA buttons */}
@@ -227,11 +227,11 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
           </span>
           <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
             <Clock className="h-4 w-4 text-emerald-400/80 shrink-0" />
-            Site livré en 2 jours
+            Site vitrine livré en 2 jours
           </span>
           <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
             <Award className="h-4 w-4 text-emerald-400/80 shrink-0" />
-            Site 100&nbsp;% votre propriété
+            Site vitrine 100&nbsp;% votre propriété
           </span>
         </motion.div>
 
@@ -428,7 +428,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                       </label>
                       <textarea
                         rows={3}
-                        placeholder="Décrivez brièvement votre vision pour votre site web..."
+                        placeholder="Décrivez brièvement votre vision pour votre site vitrine..."
                         value={formData.message}
                         onChange={(e) =>
                           setFormData({ ...formData, message: e.target.value })

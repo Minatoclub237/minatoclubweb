@@ -130,7 +130,7 @@ function MentionsContent() {
       <H3>Éditeur du site</H3>
       <P>
         Le présent site est édité par <strong className="text-white/90">Minato Club Web</strong> (nom commercial),
-        studio de création de sites web à destination des TPE et PME de France, Belgique et Suisse.
+        studio de création de sites vitrines à destination des TPE et PME de France, Belgique et Suisse.
       </P>
       <P>Contact : <Mail />.</P>
       <P>Directeur de la publication : Minato Club Web.</P>

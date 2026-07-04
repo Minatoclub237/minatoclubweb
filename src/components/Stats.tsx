@@ -53,7 +53,7 @@ export function Stats() {
   }, [videoUrl]);
 
   const stats = [
-    { value: "200+", label: "Sites lancés" },
+    { value: "200+", label: "Sites vitrines livrés" },
     { value: "98%", label: "Satisfaction client" },
     { value: "3.2x", label: "Plus de conversions" },
     { value: "2 jours", label: "Livraison moyenne" },

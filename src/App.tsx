@@ -366,13 +366,13 @@ export default function App() {
                       Conçu pour convertir. Pensé pour la performance.
                     </h3>
                     <p className="text-white/70 font-body font-light text-sm leading-relaxed">
-                      Chaque site web que nous concevons intègre les meilleures techniques de chargement rapide, d'ergonomie et de fluidité. Plus un site est rapide, plus vos clients de votre région (France, Belgique, Suisse) restent et vous contactent.
+                      Chaque site vitrine que nous concevons intègre les meilleures techniques de chargement rapide, d'ergonomie et de fluidité. Plus un site est rapide, plus vos clients de votre région (France, Belgique, Suisse) restent et vous contactent.
                     </p>
                     <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 flex gap-3 items-start mt-2">
                       <AlertCircle className="h-5 w-5 text-white/50 shrink-0 mt-0.5" />
                       <div className="flex flex-col gap-1">
                         <span className="text-xs font-semibold text-white">Rapidité optimale garantie</span>
-                        <p className="text-xs text-white/50">Un site instantané sur mobile et ordinateur pour offrir une expérience irréprochable et rassurer vos visiteurs.</p>
+                        <p className="text-xs text-white/50">Un site vitrine instantané sur mobile et ordinateur pour offrir une expérience irréprochable et rassurer vos visiteurs.</p>
                       </div>
                     </div>
                   </div>
@@ -382,7 +382,7 @@ export default function App() {
                       Une visibilité locale accrue.
                     </h3>
                     <p className="text-white/70 font-body font-light text-sm leading-relaxed">
-                      Nous optimisons la structure de votre site pour les moteurs de recherche (SEO). Que vos clients soient en France, en Belgique ou en Suisse, ils vous trouveront plus facilement pour vos services et vos produits.
+                      Nous optimisons la structure de votre site vitrine pour les moteurs de recherche (SEO). Que vos clients soient en France, en Belgique ou en Suisse, ils vous trouveront plus facilement pour vos services et vos produits.
                     </p>
                     <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 flex gap-3 items-start mt-2">
                       <AlertCircle className="h-5 w-5 text-white/50 shrink-0 mt-0.5" />
