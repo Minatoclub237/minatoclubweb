@@ -76,7 +76,7 @@ export function Portfolio() {
             className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white tracking-tight leading-[0.95]"
             id="portfolio-heading"
           >
-            Ils nous font confiance.
+            Des univers 3D immersifs conçus pour chaque secteur
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 15 }}

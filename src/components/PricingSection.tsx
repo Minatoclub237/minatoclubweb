@@ -85,7 +85,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
             className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white tracking-tight leading-[0.95]"
             id="pricing-section-heading"
           >
-            Des offres claires et sans surprise.
+            Un site premium à partir d'un tarif accessible, paiement en 2 fois
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 15 }}

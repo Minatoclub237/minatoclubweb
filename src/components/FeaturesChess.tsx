@@ -52,7 +52,7 @@ export function FeaturesChess({ onLearnMoreClick }: FeaturesChessProps) {
               id="feature-chess-row1-content"
             >
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-heading italic leading-[1.0] text-white">
-                Conçu pour attirer vos clients locaux.
+                Votre site vitrine 3D livré en 2 jours, maquette validée avant paiement
               </h3>
               <p className="text-white/70 font-body font-light text-sm md:text-base leading-relaxed">
                 Chaque élément de votre site vitrine est pensé pour inspirer confiance. Nous créons pour vous un design 3D cinématique unique et ultra-rapide qui convertit vos visiteurs en clients fidèles, parfaitement adapté aux attentes de vos clients en France, Belgique et Suisse.

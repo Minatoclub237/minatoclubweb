@@ -71,11 +71,11 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
           <div className="mt-2" id="hero-heading-container">
             <BlurText
               as="h1"
-              text="Le Site Vitrine 3D Cinématique Que Votre Marque Mérite"
+              text="Sites vitrines 3D cinématiques qui transforment vos visiteurs en clients"
               delay={150}
               stagger={100}
               splitBy="words"
-              className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.85] tracking-[-3px]"
+              className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.85] tracking-[-3px] justify-center"
             />
           </div>
 
