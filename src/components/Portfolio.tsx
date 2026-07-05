@@ -9,7 +9,7 @@ export function Portfolio() {
       location: "Lyon, France",
       category: "Boulangerie & Restauration",
       description: "Site vitrine gourmand : fournées du jour, horaires et click & collect pour une boulangerie-pâtisserie artisanale française.",
-      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
+      image: "/demo-bakery.jpg",
       link: "https://restaurant-bakery.vercel.app/",
     },
     {
@@ -17,7 +17,7 @@ export function Portfolio() {
       location: "Genève, Suisse",
       category: "Joaillerie & Horlogerie",
       description: "Écrin numérique immersif présentant des créations de haute joaillerie suisse, avec mise en scène 3D des pièces d'exception.",
-      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
+      image: "/demo-royaute.jpg",
       link: "https://royaute-swiss.vercel.app/",
     },
     {
@@ -25,7 +25,7 @@ export function Portfolio() {
       location: "Bruxelles, Belgique",
       category: "Immobilier de prestige",
       description: "Vitrine immobilière élégante : biens de prestige, visites immersives et prise de contact fluide pour une agence belge haut de gamme.",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      image: "/demo-immobilier.jpg",
       link: "https://immobilier-3-xc.vercel.app/",
     },
   ];
