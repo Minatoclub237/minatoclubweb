@@ -10,7 +10,7 @@ export function Portfolio() {
       category: "Boulangerie & Restauration",
       description: "Site vitrine gourmand : fournées du jour, horaires et click & collect pour une boulangerie-pâtisserie artisanale française.",
       image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
-      link: "https://wa.me/33644662163",
+      link: "https://restaurant-bakery.vercel.app/",
     },
     {
       title: "Maison Royauté",
