@@ -29,10 +29,10 @@ export function Stats() {
   }, [videoUrl]);
 
   const stats = [
-    { value: "200+", label: "Sites vitrines livrés" },
-    { value: "98%", label: "Satisfaction client" },
-    { value: "3.2x", label: "Plus de conversions" },
     { value: "2 jours", label: "Livraison moyenne" },
+    { value: "100%", label: "Sur mesure" },
+    { value: "2×", label: "Paiement sans frais" },
+    { value: "3 pays", label: "France · Belgique · Suisse" },
   ];
 
   return (
@@ -98,7 +98,7 @@ export function Stats() {
                   {stat.value}
                 </motion.span>
                 {/* Label */}
-                <span className="text-white/60 font-body font-light text-sm tracking-wide">
+                <span className="text-white/72 font-body font-light text-sm tracking-wide">
                   {stat.label}
                 </span>
               </div>

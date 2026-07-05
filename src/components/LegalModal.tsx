@@ -57,13 +57,13 @@ export function LegalModal({ page, onClose, onNavigate }: LegalModalProps) {
             {/* Header + onglets */}
             <div className="shrink-0 p-6 pb-0">
               <div className="flex items-center justify-between">
-                <span className="text-[11px] uppercase font-body tracking-widest text-white/40">
+                <span className="text-[11px] uppercase font-body tracking-widest text-white/56">
                   Informations légales
                 </span>
                 <button
                   onClick={onClose}
                   aria-label="Fermer"
-                  className="p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors cursor-pointer"
+                  className="p-1.5 rounded-full hover:bg-white/10 text-white/72 hover:text-white transition-colors cursor-pointer"
                 >
                   <X className="h-4 w-4" />
                 </button>
@@ -77,7 +77,7 @@ export function LegalModal({ page, onClose, onNavigate }: LegalModalProps) {
                     className={`flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-body transition-colors cursor-pointer ${
                       page === t.id
                         ? "bg-white text-black font-semibold"
-                        : "text-white/60 hover:text-white hover:bg-white/5 border border-white/10"
+                        : "text-white/72 hover:text-white hover:bg-white/5 border border-white/10"
                     }`}
                   >
                     {t.icon}
@@ -139,7 +139,7 @@ function MentionsContent() {
       <P>
         Le site est hébergé par <strong className="text-white/90">Vercel Inc.</strong>, 340 S Lemon Ave #4133,
         Walnut, CA 91789, États-Unis — <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-2 hover:text-white/80">vercel.com</a>.
-        {" "}<span className="text-white/40">(À adapter si le site est hébergé ailleurs.)</span>
+        {" "}<span className="text-white/56">(À adapter si le site est hébergé ailleurs.)</span>
       </P>
 
       <H3>Propriété intellectuelle</H3>

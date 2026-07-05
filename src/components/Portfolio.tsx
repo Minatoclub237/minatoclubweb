@@ -83,7 +83,7 @@ export function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-white/60 font-body font-light text-sm md:text-base max-w-xl mt-2"
+            className="text-white/72 font-body font-light text-sm md:text-base max-w-xl mt-2"
           >
             Découvrez des exemples concrets de sites vitrines créés pour des commerces de proximité et des professionnels locaux.
           </motion.p>
@@ -132,23 +132,23 @@ export function Portfolio() {
               {/* Card Body */}
               <div className="p-8 flex flex-col justify-between flex-grow">
                 <div className="flex flex-col gap-3">
-                  <span className="text-[11px] font-body uppercase tracking-wider text-white/50">
+                  <span className="text-[11px] font-body uppercase tracking-wider text-white/66">
                     {project.category}
                   </span>
                   <h3 className="text-2xl font-heading italic text-white leading-tight">
                     {project.title}
                   </h3>
-                  <p className="text-white/60 font-body font-light text-sm leading-relaxed">
+                  <p className="text-white/72 font-body font-light text-sm leading-relaxed">
                     {project.description}
                   </p>
                 </div>
 
                 {/* View Project Action */}
                 <div className="mt-8 pt-6 border-t border-white/5 flex justify-between items-center group-hover:border-white/10 transition-colors">
-                  <span className="text-xs font-body font-medium text-white/40 group-hover:text-white/80 transition-colors">
+                  <span className="text-xs font-body font-medium text-white/56 group-hover:text-white/80 transition-colors">
                     Voir la démo
                   </span>
-                  <div className="h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 group-hover:text-black group-hover:bg-white group-hover:border-transparent transition-all duration-300">
+                  <div className="h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/72 group-hover:text-black group-hover:bg-white group-hover:border-transparent transition-all duration-300">
                     <ArrowUpRight className="h-4 w-4" />
                   </div>
                 </div>

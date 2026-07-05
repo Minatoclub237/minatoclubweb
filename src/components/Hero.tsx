@@ -141,7 +141,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
 
         {/* Trust / guarantees bar at the bottom */}
         <div className="w-full mt-auto pb-10 pt-10 flex flex-col items-center gap-6 z-20">
-          <div className="liquid-glass rounded-full px-4 py-1.5 text-[11px] uppercase tracking-widest text-white/50 font-body">
+          <div className="liquid-glass rounded-full px-4 py-1.5 text-[11px] uppercase tracking-widest text-white/66 font-body">
             Ce qui est toujours inclus
           </div>
           <div
@@ -151,9 +151,9 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
             {trustPoints.map((point) => (
               <span
                 key={point}
-                className="flex items-center gap-2 text-sm md:text-base font-body font-light text-white/50 hover:text-white/90 transition-colors duration-300 select-none"
+                className="flex items-center gap-2 text-sm md:text-base font-body font-light text-white/66 hover:text-white/90 transition-colors duration-300 select-none"
               >
-                <Check className="h-4 w-4 text-white/60 shrink-0" />
+                <Check className="h-4 w-4 text-white/72 shrink-0" />
                 {point}
               </span>
             ))}

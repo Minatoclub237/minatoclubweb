@@ -213,20 +213,20 @@ export default function App() {
               {/* Close button */}
               <button
                 onClick={() => setActiveModal(null)}
-                className="absolute top-6 right-6 p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors cursor-pointer"
+                className="absolute top-6 right-6 p-1.5 rounded-full hover:bg-white/10 text-white/72 hover:text-white transition-colors cursor-pointer"
               >
                 <X className="h-5 w-5" />
               </button>
 
               {/* Modal Header */}
               <div className="text-center flex flex-col items-center gap-3 mb-12">
-                <span className="liquid-glass rounded-full px-3.5 py-1 text-[11px] uppercase tracking-widest text-white/50 font-body flex items-center gap-1.5">
+                <span className="liquid-glass rounded-full px-3.5 py-1 text-[11px] uppercase tracking-widest text-white/66 font-body flex items-center gap-1.5">
                   <Sparkles className="h-3.5 w-3.5 text-white/80" /> Structure de l'investissement
                 </span>
                 <h3 className="text-4xl md:text-5xl font-heading italic text-white">
                   Abonnements transparents, axés sur la valeur.
                 </h3>
-                <p className="text-white/60 font-body font-light text-sm max-w-lg mt-1">
+                <p className="text-white/72 font-body font-light text-sm max-w-lg mt-1">
                   Création de logiciels sur mesure et livraison ultra-rapide. Choisissez le rythme de développement qui s'aligne sur les ambitions de votre marque.
                 </p>
               </div>
@@ -260,7 +260,7 @@ export default function App() {
                             <span className="text-4xl md:text-5xl font-heading italic text-white font-semibold">
                               {tier.price}
                             </span>
-                            <span className="text-xs text-white/50 font-body font-light">
+                            <span className="text-xs text-white/66 font-body font-light">
                               {tier.period}
                             </span>
                           </div>
@@ -270,7 +270,7 @@ export default function App() {
                                 + {tier.monthlyPriceValue}
                               </span>
                               <span className="text-xs text-emerald-400/80 font-body font-light">
-                                / mois <span className="text-[10px] text-white/40">(maintenance & hébergement)</span>
+                                / mois <span className="text-[10px] text-white/56">(maintenance & hébergement)</span>
                               </span>
                             </div>
                           ) : (
@@ -282,7 +282,7 @@ export default function App() {
                           )}
                         </div>
 
-                        <p className="text-xs text-white/60 font-body font-light mt-3 leading-relaxed">
+                        <p className="text-xs text-white/72 font-body font-light mt-3 leading-relaxed">
                           {tier.tagline}
                         </p>
                       </div>
@@ -342,7 +342,7 @@ export default function App() {
             >
               <button
                 onClick={() => setActiveModal(null)}
-                className="absolute top-5 right-5 p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors cursor-pointer"
+                className="absolute top-5 right-5 p-1.5 rounded-full hover:bg-white/10 text-white/72 hover:text-white transition-colors cursor-pointer"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -352,7 +352,7 @@ export default function App() {
                   <div className="h-8 w-8 rounded-full bg-white/10 flex items-center justify-center text-white">
                     <Sparkles className="h-4 w-4" />
                   </div>
-                  <span className="text-xs uppercase font-body tracking-wider text-white/50">
+                  <span className="text-xs uppercase font-body tracking-wider text-white/66">
                     Analyse approfondie
                   </span>
                 </div>
@@ -366,10 +366,10 @@ export default function App() {
                       Chaque site vitrine que nous concevons intègre les meilleures techniques de chargement rapide, d'ergonomie et de fluidité. Plus un site est rapide, plus vos clients de votre région (France, Belgique, Suisse) restent et vous contactent.
                     </p>
                     <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 flex gap-3 items-start mt-2">
-                      <AlertCircle className="h-5 w-5 text-white/50 shrink-0 mt-0.5" />
+                      <AlertCircle className="h-5 w-5 text-white/66 shrink-0 mt-0.5" />
                       <div className="flex flex-col gap-1">
                         <span className="text-xs font-semibold text-white">Rapidité optimale garantie</span>
-                        <p className="text-xs text-white/50">Un site vitrine instantané sur mobile et ordinateur pour offrir une expérience irréprochable et rassurer vos visiteurs.</p>
+                        <p className="text-xs text-white/66">Un site vitrine instantané sur mobile et ordinateur pour offrir une expérience irréprochable et rassurer vos visiteurs.</p>
                       </div>
                     </div>
                   </div>
@@ -382,10 +382,10 @@ export default function App() {
                       Nous optimisons la structure de votre site vitrine pour les moteurs de recherche (SEO). Que vos clients soient en France, en Belgique ou en Suisse, ils vous trouveront plus facilement pour vos services et vos produits.
                     </p>
                     <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 flex gap-3 items-start mt-2">
-                      <AlertCircle className="h-5 w-5 text-white/50 shrink-0 mt-0.5" />
+                      <AlertCircle className="h-5 w-5 text-white/66 shrink-0 mt-0.5" />
                       <div className="flex flex-col gap-1">
                         <span className="text-xs font-semibold text-white">Référencement local (SEO)</span>
-                        <p className="text-xs text-white/50">Configuration optimale pour ressortir dans les recherches locales sur Google et Google Maps dans votre ville.</p>
+                        <p className="text-xs text-white/66">Configuration optimale pour ressortir dans les recherches locales sur Google et Google Maps dans votre ville.</p>
                       </div>
                     </div>
                   </div>

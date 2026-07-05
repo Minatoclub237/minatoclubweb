@@ -195,19 +195,19 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5 mt-2"
         >
-          <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
+          <span className="flex items-center gap-2 text-xs md:text-sm text-white/72 font-body font-light">
             <ShieldCheck className="h-4 w-4 text-emerald-400/80 shrink-0" />
             Maquette validée avant tout paiement
           </span>
-          <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
+          <span className="flex items-center gap-2 text-xs md:text-sm text-white/72 font-body font-light">
             <Clock className="h-4 w-4 text-emerald-400/80 shrink-0" />
             Site vitrine livré en 2 jours
           </span>
-          <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
+          <span className="flex items-center gap-2 text-xs md:text-sm text-white/72 font-body font-light">
             <Award className="h-4 w-4 text-emerald-400/80 shrink-0" />
             Site vitrine 100&nbsp;% votre propriété
           </span>
-          <span className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light">
+          <span className="flex items-center gap-2 text-xs md:text-sm text-white/72 font-body font-light">
             <CreditCard className="h-4 w-4 text-emerald-400/80 shrink-0" />
             Paiement 2× sans frais
           </span>
@@ -230,11 +230,11 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
       <div className="relative z-30 max-w-7xl mx-auto px-6 w-full mt-24">
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left copyright */}
-          <div className="text-white/40 text-xs font-body font-light">
+          <div className="text-white/56 text-xs font-body font-light">
             &copy; 2026 Minato Club Web. Tous droits réservés. Conçu avec soin pour les TPE & PME.
           </div>
           {/* Right compliance links */}
-          <div className="flex gap-6 text-white/40 text-xs font-body font-light">
+          <div className="flex gap-6 text-white/56 text-xs font-body font-light">
             <button
               onClick={() => onOpenLegal("mentions")}
               className="hover:text-white/80 transition-colors cursor-pointer"
@@ -281,7 +281,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
               {/* Close Button */}
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="absolute top-4 right-4 p-1.5 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-colors"
+                className="absolute top-4 right-4 p-1.5 rounded-full hover:bg-white/10 text-white/72 hover:text-white transition-colors"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -294,14 +294,14 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                   <h3 className="text-2xl font-heading italic text-white">
                     Demande bien reçue !
                   </h3>
-                  <p className="text-white/60 font-body font-light text-sm">
+                  <p className="text-white/72 font-body font-light text-sm">
                     Merci. Notre équipe revient vers vous par e-mail sous 24&nbsp;h ouvrées pour convenir d'un échange. Pensez à vérifier vos courriers indésirables.
                   </p>
                 </div>
               ) : (
                 <div className="flex flex-col gap-6 text-left">
                   <div className="flex flex-col gap-1.5">
-                    <span className="text-xs uppercase font-body tracking-wider text-white/50">
+                    <span className="text-xs uppercase font-body tracking-wider text-white/66">
                       Découverte
                     </span>
                     <h3 className="text-3xl font-heading italic text-white leading-tight">
@@ -311,7 +311,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
 
                   <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                     <div className="flex flex-col gap-1.5">
-                      <label className="text-xs font-body text-white/60">
+                      <label className="text-xs font-body text-white/72">
                         Nom complet
                       </label>
                       <input
@@ -327,7 +327,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                     </div>
 
                     <div className="flex flex-col gap-1.5 relative">
-                      <label className="text-xs font-body text-white/60">
+                      <label className="text-xs font-body text-white/72">
                         Téléphone portable
                       </label>
                       <div className="flex gap-2">
@@ -340,7 +340,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                           >
                             <CountryFlag iso={selectedCountry.iso} />
                             <span className="text-xs text-white/80 font-mono">{selectedCountry.code}</span>
-                            <span className="text-[9px] text-white/40">▼</span>
+                            <span className="text-[9px] text-white/56">▼</span>
                           </button>
 
                           {isDropdownOpen && (
@@ -362,7 +362,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                                   >
                                     <CountryFlag iso={c.iso} />
                                     <span className="font-medium text-white/90">{c.name}</span>
-                                    <span className="font-mono text-white/40 ml-auto">{c.code}</span>
+                                    <span className="font-mono text-white/56 ml-auto">{c.code}</span>
                                   </button>
                                 ))}
                               </div>
@@ -385,7 +385,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                      <label className="text-xs font-body text-white/60">
+                      <label className="text-xs font-body text-white/72">
                         Adresse e-mail professionnelle
                       </label>
                       <input
@@ -401,7 +401,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                      <label className="text-xs font-body text-white/60">
+                      <label className="text-xs font-body text-white/72">
                         Parlez-nous de votre marque (facultatif)
                       </label>
                       <textarea
@@ -424,7 +424,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
                         onChange={(e) => setConsent(e.target.checked)}
                         className="mt-0.5 h-4 w-4 shrink-0 accent-emerald-400 cursor-pointer"
                       />
-                      <span className="text-[11px] leading-relaxed text-white/50 font-body font-light">
+                      <span className="text-[11px] leading-relaxed text-white/66 font-body font-light">
                         J'accepte que mes données soient utilisées pour être recontacté(e) au sujet de ma demande,
                         conformément à la{" "}
                         <button

@@ -149,7 +149,7 @@ export function Faq() {
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.25 }}
-                    className="shrink-0 text-white/60"
+                    className="shrink-0 text-white/72"
                   >
                     <Plus className="h-5 w-5" />
                   </motion.span>
@@ -163,7 +163,7 @@ export function Faq() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <p className="px-6 pb-5 pt-0 text-sm text-white/60 font-body font-light leading-relaxed">
+                      <p className="px-6 pb-5 pt-0 text-sm text-white/72 font-body font-light leading-relaxed">
                         {item.a}
                       </p>
                     </motion.div>

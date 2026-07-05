@@ -27,7 +27,7 @@ export function BlurText({
 
   const elements = splitBy === "words" ? text.split(" ") : text.split("");
 
-  const startY = direction === "bottom" ? 50 : -50;
+  const startY = direction === "bottom" ? 20 : -20;
 
   return (
     <Container ref={ref as React.Ref<HTMLElement>} className={`inline-flex flex-wrap ${className}`} id="blur-text-container">
@@ -43,24 +43,13 @@ export function BlurText({
               whiteSpace: "pre-wrap",
               marginRight: splitBy === "words" ? "0.25em" : "0px",
             }}
-            initial={{
-              filter: "blur(10px)",
-              opacity: 0,
-              y: startY,
-            }}
-            animate={
-              isInView
-                ? {
-                    filter: ["blur(10px)", "blur(5px)", "blur(0px)"],
-                    opacity: [0, 0.5, 1],
-                    y: [startY, -5, 0],
-                  }
-                : {}
-            }
+            // Texte LISIBLE par défaut (opacity 1, pas de flou) : le HTML statique/SSG
+            // n'est plus masqué. L'animation n'est qu'un léger glissement (enrichissement JS).
+            initial={{ opacity: 1, y: startY }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
-              duration: 0.35,
+              duration: 0.5,
               delay: elementDelay,
-              times: [0, 0.5, 1],
               ease: "easeOut",
             }}
           >

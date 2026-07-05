@@ -72,7 +72,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
-            className="liquid-glass rounded-full px-3.5 py-1 text-[11px] uppercase tracking-widest text-white/50 font-body flex items-center gap-1.5"
+            className="liquid-glass rounded-full px-3.5 py-1 text-[11px] uppercase tracking-widest text-white/66 font-body flex items-center gap-1.5"
             id="pricing-section-badge"
           >
             <Sparkles className="h-3.5 w-3.5 text-white/80" /> Nos Tarifs
@@ -92,7 +92,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-white/60 font-body font-light text-sm md:text-base max-w-xl mt-2"
+            className="text-white/72 font-body font-light text-sm md:text-base max-w-xl mt-2"
           >
             Choisissez la formule de site vitrine 3D cinématique adaptée à votre entreprise. Prix transparents, paiement 2× sans frais.
           </motion.p>
@@ -145,7 +145,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
                   </h4>
                   <div className="flex flex-col gap-1.5 mt-1">
                     {tier.period === "par projet" && (
-                      <span className="text-[11px] text-white/40 font-body uppercase tracking-wider">
+                      <span className="text-[11px] text-white/56 font-body uppercase tracking-wider">
                         À partir de
                       </span>
                     )}
@@ -153,7 +153,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
                       <span className="text-4xl md:text-5xl font-heading italic text-white font-semibold">
                         {tier.price}
                       </span>
-                      <span className="text-xs text-white/50 font-body font-light">
+                      <span className="text-xs text-white/66 font-body font-light">
                         {tier.period}
                       </span>
                     </div>
@@ -163,7 +163,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
                           + {tier.monthlyPriceValue}
                         </span>
                         <span className="text-xs text-emerald-400/80 font-body font-light">
-                          / mois <span className="text-[10px] text-white/40">(maintenance & hébergement)</span>
+                          / mois <span className="text-[10px] text-white/56">(maintenance & hébergement)</span>
                         </span>
                       </div>
                     ) : (
@@ -175,7 +175,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
                     )}
                   </div>
 
-                  <p className="text-xs text-white/60 font-body font-light mt-3 leading-relaxed">
+                  <p className="text-xs text-white/72 font-body font-light mt-3 leading-relaxed">
                     {tier.tagline}
                   </p>
                 </div>
@@ -226,7 +226,7 @@ export function PricingSection({ onCtaClick }: PricingSectionProps) {
           ].map((t) => (
             <span
               key={t}
-              className="flex items-center gap-2 text-xs md:text-sm text-white/60 font-body font-light"
+              className="flex items-center gap-2 text-xs md:text-sm text-white/72 font-body font-light"
             >
               <Check className="h-4 w-4 text-emerald-400/80 shrink-0" /> {t}
             </span>

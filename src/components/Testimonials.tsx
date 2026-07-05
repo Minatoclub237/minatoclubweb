@@ -106,7 +106,7 @@ export function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-white/45 font-body font-light text-xs max-w-md"
+            className="text-white/60 font-body font-light text-xs max-w-md"
           >
             Artisans, commerçants et professionnels — France · Belgique · Suisse.
           </motion.p>
@@ -157,8 +157,8 @@ export function Testimonials() {
                       />
                       <div className="flex flex-col gap-0.5 min-w-0">
                         <h4 className="text-white font-body font-medium text-sm truncate">{item.name}</h4>
-                        <p className="text-white/50 font-body font-light text-xs truncate">{item.role}</p>
-                        <span className="flex items-center gap-1.5 text-white/40 text-[11px] font-body mt-0.5">
+                        <p className="text-white/66 font-body font-light text-xs truncate">{item.role}</p>
+                        <span className="flex items-center gap-1.5 text-white/56 text-[11px] font-body mt-0.5">
                           <CountryFlag iso={item.iso} className="!w-[15px] !h-[11px]" />
                           {item.city}
                         </span>

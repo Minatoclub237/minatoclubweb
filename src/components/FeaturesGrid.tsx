@@ -113,7 +113,7 @@ export function FeaturesGrid() {
                   <h3 className="text-xl font-heading italic text-white font-medium">
                     {card.title}
                   </h3>
-                  <p className="text-white/60 font-body font-light text-sm md:text-xs leading-relaxed">
+                  <p className="text-white/72 font-body font-light text-sm md:text-xs leading-relaxed">
                     {card.description}
                   </p>
                 </div>
