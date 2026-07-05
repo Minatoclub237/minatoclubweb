@@ -109,10 +109,10 @@ export default function App() {
           onWatchFilmClick={() => setActiveModal("film")} 
         />
         
-        <FeaturesChess onLearnMoreClick={handleLearnMore} />
-        
         <Portfolio />
-        
+
+        <FeaturesChess onLearnMoreClick={handleLearnMore} />
+
         <FeaturesGrid />
         
         <StartSection onCtaClick={() => handleNavigate("cta")} />

@@ -1,16 +1,18 @@
-import React from "react";
-import { ArrowUpRight } from "lucide-react";
-import { motion } from "motion/react";
+import React, { useState } from "react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
 }
 
 export function Navbar({ onNavigate }: NavbarProps) {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   const navLinks = [
     { name: "Accueil", id: "home" },
-    { name: "Services", id: "services" },
     { name: "Réalisations", id: "work" },
+    { name: "Services", id: "services" },
     { name: "Processus", id: "process" },
     { name: "Tarifs", id: "pricing" },
     { name: "FAQ", id: "faq" },
@@ -19,6 +21,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
   const handleLinkClick = (e: React.MouseEvent, id: string) => {
     e.preventDefault();
     onNavigate(id);
+    setMobileOpen(false);
   };
 
   return (
@@ -42,7 +45,8 @@ export function Navbar({ onNavigate }: NavbarProps) {
             {/* Monogramme MCW (plus d'image externe cassée) */}
             <span className="font-heading italic text-sm tracking-tight text-white select-none relative z-10">MCW</span>
           </div>
-          <span className="font-heading italic text-xl tracking-wide text-white group-hover:opacity-80 transition-opacity">
+          {/* Texte de marque masqué sur très petits écrans pour laisser la place au menu */}
+          <span className="hidden sm:inline font-heading italic text-xl tracking-wide text-white group-hover:opacity-80 transition-opacity">
             MINATO CLUB WEB
           </span>
         </a>
@@ -62,8 +66,8 @@ export function Navbar({ onNavigate }: NavbarProps) {
           ))}
         </div>
 
-        {/* Right Side CTA Button */}
-        <div>
+        {/* Right Side: CTA + Burger (mobile) */}
+        <div className="flex items-center gap-2">
           <button
             onClick={(e) => handleLinkClick(e, "cta")}
             data-umami-event="cta-nav-devis"
@@ -73,8 +77,44 @@ export function Navbar({ onNavigate }: NavbarProps) {
             <span>Devis gratuit</span>
             <ArrowUpRight className="h-4 w-4" />
           </button>
+
+          {/* Bouton menu (mobile uniquement) */}
+          <button
+            onClick={() => setMobileOpen((o) => !o)}
+            aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={mobileOpen}
+            className="md:hidden h-10 w-10 rounded-full liquid-glass-strong border border-white/20 flex items-center justify-center text-white active:scale-95 transition-transform cursor-pointer shrink-0"
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {/* Menu mobile déroulant */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="md:hidden mt-3 max-w-7xl mx-auto rounded-3xl border border-white/15 bg-zinc-950/95 backdrop-blur-xl overflow-hidden shadow-2xl"
+          >
+            <nav className="flex flex-col p-2">
+              {navLinks.map((link) => (
+                <a
+                  key={link.id}
+                  href={`#${link.id}`}
+                  onClick={(e) => handleLinkClick(e, link.id)}
+                  className="px-5 py-3.5 rounded-2xl text-white/90 font-body font-medium text-base hover:bg-white/5 active:bg-white/10 transition-colors"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
