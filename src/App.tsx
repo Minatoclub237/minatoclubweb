@@ -12,7 +12,6 @@ import { StartSection } from "./components/StartSection";
 import { FeaturesChess } from "./components/FeaturesChess";
 import { FeaturesGrid } from "./components/FeaturesGrid";
 import { Stats } from "./components/Stats";
-import { Testimonials } from "./components/Testimonials";
 import { CtaFooter } from "./components/CtaFooter";
 import { Portfolio } from "./components/Portfolio";
 import { PricingSection } from "./components/PricingSection";
@@ -121,8 +120,6 @@ export default function App() {
         
         <PricingSection onCtaClick={() => handleNavigate("cta")} />
         
-        <Testimonials />
-
         <Faq />
 
         <CtaFooter
