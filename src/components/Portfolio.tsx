@@ -26,7 +26,7 @@ export function Portfolio() {
       category: "Immobilier de prestige",
       description: "Vitrine immobilière élégante : biens de prestige, visites immersives et prise de contact fluide pour une agence belge haut de gamme.",
       image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      link: "https://wa.me/33644662163",
+      link: "https://immobilier-3-xc.vercel.app/",
     },
   ];
 
@@ -105,7 +105,7 @@ export function Portfolio() {
               target="_blank"
               rel="noopener noreferrer"
               data-umami-event="portfolio-demo"
-              data-umami-event-projet={project.title}
+              data-umami-event-projet={project.location}
               variants={cardVariants}
               whileHover={{
                 y: -8,
@@ -125,7 +125,7 @@ export function Portfolio() {
 
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={project.category}
                   className="w-full h-full object-cover relative z-0 transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                 />
@@ -137,9 +137,6 @@ export function Portfolio() {
                   <span className="text-[11px] font-body uppercase tracking-wider text-white/66">
                     {project.category}
                   </span>
-                  <h3 className="text-2xl font-heading italic text-white leading-tight">
-                    {project.title}
-                  </h3>
                   <p className="text-white/72 font-body font-light text-sm leading-relaxed">
                     {project.description}
                   </p>
