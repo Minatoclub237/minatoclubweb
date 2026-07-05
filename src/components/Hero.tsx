@@ -52,7 +52,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
       {/* Content Container */}
       <div className="relative z-20 w-full max-w-5xl mx-auto px-6 flex flex-col items-center h-full pt-[170px] justify-between">
         {/* Top Badging & Main Typography Group */}
-        <div className="flex flex-col items-center gap-6 md:gap-8 max-w-3xl">
+        <div className="flex flex-col items-center gap-6 md:gap-8 max-w-4xl">
           {/* Badge Pill */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, filter: "blur(4px)" }}
@@ -75,7 +75,7 @@ export function Hero({ onCtaClick, onWatchFilmClick }: HeroProps) {
               delay={150}
               stagger={100}
               splitBy="words"
-              className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.85] tracking-[-3px] justify-center"
+              className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3.15rem] font-heading italic text-white leading-[0.95] tracking-[-1px] justify-center"
             />
           </div>
 
