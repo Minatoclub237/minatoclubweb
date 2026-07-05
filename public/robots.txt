@@ -2,16 +2,64 @@
 User-agent: *
 Allow: /
 
-# Crawlers IA (autorisés — visibilité sur ChatGPT, Perplexity, Google AI Overviews)
+# --- Crawlers IA autorisés (visibilité GEO : citations dans ChatGPT, Claude, Perplexity, Gemini, etc.) ---
+
+# OpenAI / ChatGPT
 User-agent: GPTBot
 Allow: /
 User-agent: OAI-SearchBot
 Allow: /
-User-agent: PerplexityBot
+User-agent: ChatGPT-User
 Allow: /
+
+# Anthropic / Claude
 User-agent: ClaudeBot
 Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Google (Gemini / Vertex AI Overviews)
 User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Amazon
+User-agent: Amazonbot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# DuckDuckGo AI (DuckAssist)
+User-agent: DuckAssistBot
+Allow: /
+
+# ByteDance (TikTok AI)
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (jeu de données d'entraînement de nombreux LLM)
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://minatoclubweb.vercel.app/sitemap.xml
