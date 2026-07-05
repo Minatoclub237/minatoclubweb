@@ -10,7 +10,7 @@ export function Portfolio() {
       category: "Boulangerie & Restauration",
       description: "Site vitrine gourmand : fournées du jour, horaires et click & collect pour une boulangerie-pâtisserie artisanale française.",
       image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
-      link: "#",
+      link: "https://wa.me/33644662163",
     },
     {
       title: "Maison Royauté",
@@ -18,7 +18,7 @@ export function Portfolio() {
       category: "Joaillerie & Horlogerie",
       description: "Écrin numérique immersif présentant des créations de haute joaillerie suisse, avec mise en scène 3D des pièces d'exception.",
       image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80",
-      link: "#",
+      link: "https://royaute-swiss.vercel.app/",
     },
     {
       title: "Baldwin & Berges",
@@ -26,7 +26,7 @@ export function Portfolio() {
       category: "Immobilier de prestige",
       description: "Vitrine immobilière élégante : biens de prestige, visites immersives et prise de contact fluide pour une agence belge haut de gamme.",
       image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      link: "#",
+      link: "https://wa.me/33644662163",
     },
   ];
 
@@ -101,9 +101,11 @@ export function Portfolio() {
           {projects.map((project, idx) => (
             <motion.a
               key={idx}
-              href="https://wa.me/33644662163"
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
+              data-umami-event="portfolio-demo"
+              data-umami-event-projet={project.title}
               variants={cardVariants}
               whileHover={{
                 y: -8,
