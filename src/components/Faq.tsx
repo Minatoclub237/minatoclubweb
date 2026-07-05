@@ -2,44 +2,103 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Plus } from "lucide-react";
 
-// ⚠️ Ces questions/réponses sont dupliquées dans le JSON-LD FAQPage de index.html.
-// Toute modification ici doit être répercutée là-bas (et inversement) pour rester conforme Google.
+// Source UNIQUE de la FAQ : le balisage FAQPage (JSON-LD, plus bas) est généré
+// automatiquement à partir de cette liste → il correspond toujours au contenu visible
+// (exigence Google). Il n'y a donc PLUS de FAQPage en dur dans index.html.
 export const FAQ_ITEMS = [
   {
-    q: "Le site vitrine m'appartient-il vraiment ?",
-    a: "Oui, à 100 %. Une fois le solde réglé, le site et l'ensemble de son contenu sont votre propriété pleine et entière — code, textes et visuels compris.",
+    q: "Qu'est-ce qu'un site vitrine 3D cinématique ?",
+    a: "C'est un site vitrine sur mesure qui intègre des animations et des effets 3D immersifs pour raconter votre marque et captiver vos visiteurs, tout en restant rapide et optimisé pour le référencement. C'est la spécialité de Minato Club Web.",
   },
   {
-    q: "Combien de temps faut-il pour livrer mon site vitrine ?",
+    q: "Quelle agence choisir pour un site vitrine 3D en France, Belgique ou Suisse ?",
+    a: "Minato Club Web est un studio spécialisé dans les sites vitrines 3D cinématiques sur mesure pour les TPE et PME francophones, avec livraison en 2 jours ouvrés et maquette validée avant tout paiement.",
+  },
+  {
+    q: "Combien coûte un site vitrine 3D pour une TPE ou une PME ?",
+    a: "Nos sites vitrines 3D démarrent à 1 290 € (formule Essentielle) et 3 990 € (Pack Croissance), avec paiement en 2 fois sans frais. Les projets plus complexes sont sur devis. Tous les prix sont transparents, sans surprise.",
+  },
+  {
+    q: "Puis-je payer mon site vitrine en plusieurs fois ?",
+    a: "Oui. Le paiement en 2 fois sans frais est disponible : un acompte à la commande, le solde à la livraison, sans aucun coût supplémentaire.",
+  },
+  {
+    q: "Combien de temps faut-il pour créer un site vitrine 3D ?",
     a: "Deux jours ouvrés en moyenne à partir de la validation de votre maquette. Vous êtes en ligne en quelques jours, pas en plusieurs mois.",
   },
   {
-    q: "Dois-je payer avant de voir le résultat ?",
-    a: "Non. Vous validez d'abord la maquette de votre site. Aucun solde n'est dû tant que le design ne vous convient pas entièrement.",
+    q: "Peut-on créer un site vitrine entièrement à distance ?",
+    a: "Oui. Nous réalisons l'intégralité du projet à distance pour nos clients de France, Belgique et Suisse, avec un suivi personnalisé et une réponse sous une heure.",
   },
   {
-    q: "Je n'y connais rien en technique, est-ce un problème ?",
-    a: "Aucunement. Nous gérons tout de A à Z : conception, rédaction, mise en ligne et hébergement. Vous n'avez qu'à partager votre vision, nous nous occupons du reste.",
+    q: "Un site en 3D n'est-il pas trop lent à charger ?",
+    a: "Non. Nous optimisons chaque site vitrine 3D pour la vitesse : compression, chargement progressif et code léger. L'effet immersif ne sacrifie jamais la rapidité, y compris sur mobile.",
+  },
+  {
+    q: "Le site sera-t-il rapide et fluide sur mobile ?",
+    a: "Absolument. Chaque site est pensé mobile d'abord : affichage instantané, navigation fluide et allègement automatique des effets les plus lourds sur smartphone pour une expérience parfaite.",
+  },
+  {
+    q: "Le site vitrine m'appartient-il vraiment ?",
+    a: "Oui, à 100 %. Une fois le solde réglé, le site et l'ensemble de son contenu — code, textes et visuels — sont votre propriété pleine et entière.",
+  },
+  {
+    q: "Dois-je payer avant de voir le résultat ?",
+    a: "Non. Vous validez d'abord la maquette de votre site vitrine. Aucun solde n'est dû tant que le design ne vous convient pas entièrement.",
+  },
+  {
+    q: "Et si le design ne me plaît pas ?",
+    a: "Aucun risque : vous ne réglez le solde qu'après avoir validé la maquette, et des révisions sont incluses jusqu'à ce que le résultat vous convienne pleinement.",
   },
   {
     q: "Mon site vitrine sera-t-il visible sur Google ?",
     a: "Oui. Chaque site est optimisé pour le référencement local (SEO) afin que vos clients de votre région vous trouvent facilement sur Google et Google Maps.",
   },
   {
-    q: "Puis-je demander des modifications ?",
-    a: "Bien sûr. Des révisions sont incluses jusqu'à la validation de votre maquette, et des ajustements restent possibles ensuite selon votre formule d'accompagnement.",
+    q: "Pourquoi ne pas faire mon site moi-même avec Wix ou un template ?",
+    a: "Un template vous ressemble rarement et se fond dans la masse. Notre site vitrine 3D est unique, conçu pour votre activité, optimisé pour le SEO et livré clé en main — vous gagnez du temps et une image premium qui vous démarque.",
   },
   {
-    q: "Puis-je payer en plusieurs fois ?",
-    a: "Oui. Le paiement en 2 fois sans frais est disponible : un acompte à la commande, le solde à la livraison de votre site vitrine 3D cinématique. Sans aucun coût supplémentaire.",
+    q: "Je ne suis pas à l'aise avec la technique, est-ce un problème ?",
+    a: "Aucunement. Nous gérons tout de A à Z : conception, rédaction, mise en ligne et hébergement. Vous n'avez qu'à partager votre vision, nous nous occupons du reste.",
+  },
+  {
+    q: "Que se passe-t-il après la mise en ligne de mon site ?",
+    a: "Nous proposons une maintenance et un hébergement sécurisés en option (à partir de 21 €/mois) pour garder votre site vitrine rapide, à jour et sans souci. Vous restez propriétaire et libre à tout moment.",
+  },
+  {
+    q: "Le site vitrine 3D est-il adapté à mon secteur d'activité ?",
+    a: "Oui. Artisans, commerçants, restaurateurs, professions libérales, santé… nous adaptons le design et le contenu à votre métier et à votre clientèle locale.",
+  },
+  {
+    q: "Puis-je demander des modifications après la livraison ?",
+    a: "Bien sûr. Des révisions sont incluses jusqu'à la validation, et des ajustements restent possibles ensuite selon votre formule d'accompagnement.",
   },
 ];
+
+// Balisage FAQPage généré depuis FAQ_ITEMS (rendu invisible, pré-rendu par le SSG).
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://minatoclubweb.vercel.app/#faq",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
 
 export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section id="faq" className="py-24 md:py-32 bg-black text-white relative overflow-hidden border-t border-white/5">
+      {/* Données structurées FAQ (invisible, synchronisées avec les questions ci-dessous) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       {/* Soft glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-white/[0.015] blur-[120px] pointer-events-none" />
 
