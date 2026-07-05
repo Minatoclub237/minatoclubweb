@@ -186,10 +186,7 @@ export default function App() {
                 className="w-full h-full object-cover relative z-0"
                 id="film-modal-video"
               >
-                <source 
-                  src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4" 
-                  type="video/mp4" 
-                />
+                <source src="/film.mp4" type="video/mp4" />
               </video>
             </motion.div>
           </div>

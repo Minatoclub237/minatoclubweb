@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import type HlsType from "hls.js"; // type uniquement (effacé à la compilation, 0 Ko runtime)
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, Check, X, MessageCircle, ShieldCheck, Clock, Award, CreditCard } from "lucide-react";
 import { track } from "../lib/analytics";
@@ -15,8 +14,7 @@ interface CtaFooterProps {
 
 export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsModalOpen }: CtaFooterProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const videoUrl =
-    "https://stream.mux.com/8wrHPCX2dC3msyYU9ObwqNdm00u3ViXvOSHUMRYSEe5Q.m3u8";
+  const videoUrl = "/bg-cta.mp4";
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,44 +35,20 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
     // Pas de vidéo de fond sur mobile (fluidité) : la section garde son fond sombre.
     if (isMobileViewport()) return;
 
-    let hls: HlsType | null = null;
-    let cancelled = false;
-
-    // On ne charge la vidéo (et hls.js) que lorsque le footer approche du viewport.
-    const setup = async () => {
-      if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        // Safari / iOS : lecture HLS native, pas besoin de hls.js
-        video.src = videoUrl;
-        video.play?.().catch(() => {});
-        return;
-      }
-      // Import dynamique : hls.js (~150 Ko) sort du bundle initial
-      const { default: Hls } = await import("hls.js");
-      if (cancelled || !videoRef.current) return;
-      if (Hls.isSupported()) {
-        hls = new Hls({ maxMaxBufferLength: 10, enableWorker: true });
-        hls.loadSource(videoUrl);
-        hls.attachMedia(video);
-        video.play?.().catch(() => {});
-      }
-    };
-
+    // Vidéo locale chargée seulement à l'approche du footer.
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) {
           observer.disconnect();
-          setup();
+          video.src = videoUrl;
+          video.play?.().catch(() => {});
         }
       },
-      { rootMargin: "300px" } // on précharge un peu avant l'arrivée à l'écran
+      { rootMargin: "300px" }
     );
     observer.observe(video);
 
-    return () => {
-      cancelled = true;
-      observer.disconnect();
-      if (hls) hls.destroy();
-    };
+    return () => observer.disconnect();
   }, [videoUrl]);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -126,7 +100,7 @@ export function CtaFooter({ onViewPricingClick, onOpenLegal, isModalOpen, setIsM
       id="cta"
       className="relative overflow-hidden w-full flex flex-col justify-between pt-32 pb-12 bg-black min-h-[700px] text-white"
     >
-      {/* Background HLS Video */}
+      {/* Background video (locale) */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0" id="cta-video-container">
         <video
           ref={videoRef}

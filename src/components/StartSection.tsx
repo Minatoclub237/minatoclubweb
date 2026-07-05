@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import type HlsType from "hls.js"; // type uniquement (0 Ko runtime)
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { isMobileViewport } from "../lib/device";
@@ -10,8 +9,7 @@ interface StartSectionProps {
 
 export function StartSection({ onCtaClick }: StartSectionProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const videoUrl =
-    "https://stream.mux.com/9JXDljEVWYwWu01PUkAemafDugK89o01BR6zqJ3aS9u00A.m3u8";
+  const videoUrl = "/bg-process.mp4";
 
   useEffect(() => {
     const video = videoRef.current;
@@ -19,42 +17,20 @@ export function StartSection({ onCtaClick }: StartSectionProps) {
     // Pas de vidéo de fond sur mobile (fluidité).
     if (isMobileViewport()) return;
 
-    let hls: HlsType | null = null;
-    let cancelled = false;
-
-    // Vidéo (et hls.js) chargées seulement à l'approche du viewport.
-    const setup = async () => {
-      if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        video.src = videoUrl;
-        video.play?.().catch(() => {});
-        return;
-      }
-      const { default: Hls } = await import("hls.js");
-      if (cancelled || !videoRef.current) return;
-      if (Hls.isSupported()) {
-        hls = new Hls({ maxMaxBufferLength: 10, enableWorker: true });
-        hls.loadSource(videoUrl);
-        hls.attachMedia(video);
-        video.play?.().catch(() => {});
-      }
-    };
-
+    // Vidéo locale chargée seulement à l'approche du viewport.
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((e) => e.isIntersecting)) {
           observer.disconnect();
-          setup();
+          video.src = videoUrl;
+          video.play?.().catch(() => {});
         }
       },
       { rootMargin: "300px" }
     );
     observer.observe(video);
 
-    return () => {
-      cancelled = true;
-      observer.disconnect();
-      if (hls) hls.destroy();
-    };
+    return () => observer.disconnect();
   }, [videoUrl]);
 
   return (
@@ -62,7 +38,7 @@ export function StartSection({ onCtaClick }: StartSectionProps) {
       id="process"
       className="relative overflow-hidden w-full flex items-center justify-center py-24 md:py-32 bg-black min-h-[550px]"
     >
-      {/* Background Video (HLS Stream) */}
+      {/* Background video (locale) */}
       <div className="absolute inset-0 w-full h-full overflow-hidden z-0" id="start-video-container">
         <video
           ref={videoRef}
